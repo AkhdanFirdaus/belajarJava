@@ -11,13 +11,19 @@ package com.kelompok1b.warteg40.model;
  */
 
 public class Item {
+    private int id;
     private String foodName;
     private int category;
     private int qty = 0;
     
-    public Item(String foodName, int category) {
+    public Item(int id, String foodName, int category) {
+        this.id = id;
         this.foodName = foodName;
         this.category = category;
+    }
+    
+    public int getId() {
+        return this.id;
     }
     
     public String getItem() {

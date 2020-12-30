@@ -10,19 +10,22 @@ package com.kelompok1b.warteg40.model;
  * @author akhda
  */
 public class User {
+    private int id;
     private String name;
     private String password;
     private int role;
     
     //Admin
-    User(String name, String password, int role) {
+    User(int id, String name, String password, int role) {
+        this.id = id;
         this.name = name;
         this.password = password;
         this.role = role;
     }
     
     //Customer
-    User(String name, int role) {
+    User(int id, String name, int role) {
+        this.id = id;
         this.name = name;
         this.role = role;
     }
